@@ -1,12 +1,16 @@
 import React from "react";
 import Sidebar from "./Sidebar";
-import MainContainer from "./MainContainer";
+
+import { Outlet } from "react-router-dom";
 
 const Body = () => {
   return (
     <div className="flex">
       <Sidebar />
-      <MainContainer />
+
+      {/* Here our components change dynamically :  <MainContainer /> or <WatchPage /> with the help of <Outlet/> we provide a childrens into our body */}
+
+      <Outlet />
     </div>
   );
 };
