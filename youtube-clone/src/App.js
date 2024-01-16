@@ -1,4 +1,4 @@
-/* eslint-disable no-lone-blocks */
+
 import { Provider } from "react-redux";
 import Body from "./components/Body";
 import Head from "./components/Head";
@@ -24,7 +24,7 @@ const appRouter = createBrowserRouter([
   },
 ]);
 
-/* eslint-disable no-lone-blocks */
+
 function App() {
   return (
     <Provider store={store}>
