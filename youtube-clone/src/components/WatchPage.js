@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { closeMenu } from "./utils/appSlice";
 import { useSearchParams } from "react-router-dom";
 
-/* eslint-disable no-lone-blocks */
+
 const WatchPage = () => {
   const [searchParams] = useSearchParams();
 
