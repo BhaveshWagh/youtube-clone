@@ -8,10 +8,10 @@ const WatchPage = () => {
   const [searchParams] = useSearchParams();
 
   //   console.log(searchParams.get("v"));
-  const dispath = useDispatch();
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    dispath(closeMenu());
+    dispatch(closeMenu());
   }, []);
   return (
     <div className="px-5">
