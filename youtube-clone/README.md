@@ -11,13 +11,21 @@ Debouncing with 200ms
 if difference between 2 key strokes is <200ms - DECLINE API call
 200ms make an API call
 
-Cache: time complexity tro search in array = O(n) time complexity tro search in Object = O(1)
+Cache: 
+
+### time complexity to search in array = O(n) 
+       
+### time complexity to search in Object = O(1)
+
+array.indexOf() => O(n)
 
 [i, ip, iph, iphone]
 
 { i: ip: iph: iphone: }
 
-new Map();
+new Map(); which is even more optimize searching for object 
+
+
 
 # Getting Started with Create React App
 
