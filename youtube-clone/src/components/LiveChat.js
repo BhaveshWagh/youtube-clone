@@ -42,7 +42,7 @@ const LiveChat = () => {
         className="w-full p-2 ml-2 border border-black"
         onSubmit={(e) => {
           e.preventDefault();
-          console.log("ON FORM SUBMIT", liveMessage);
+          // console.log("ON FORM SUBMIT", liveMessage);
           dispatch(
             addMessage({
               name: "Bhavesh Wagh",
