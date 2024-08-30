@@ -61,11 +61,11 @@ const Head = () => {
    */
 
   const getSearchSuggestions = async () => {
-    // console.log("API CALL - ", searchQuery);
+    console.log("API CALL - ", searchQuery);
 
     const data = await fetch(YOUTUBE_SEARCH_API + searchQuery);
     const json = await data.json();
-    // console.log(json);
+    console.log(json);
     setSuggestions(json[1]);
     // dispatch an action to update cache
     dispatch(
@@ -78,6 +78,12 @@ const Head = () => {
   const toggleMenuHandler = () => {
     dispatch(toggleMenu());
   };
+
+  const handleSearch = () => {
+    
+  };
+
+
 
   return (
     <div className="grid grid-flow-col  p-4 my-2 shadow-lg ">
@@ -107,7 +113,10 @@ const Head = () => {
             onFocus={() => setShowSuggestions(true)}
             onBlur={() => setShowSuggestions(false)}
           />
-          <button className="border border-gray-400 py-2 px-4 bg-slate-100  rounded-r-full">
+          <button
+            onClick={handleSearch}
+            className="border border-gray-400 py-2 px-4 bg-slate-100  rounded-r-full"
+          >
             🔍
           </button>
         </div>
